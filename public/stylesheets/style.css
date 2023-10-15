@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.left{
+  width: 25%;
+  height: 100%;
+  background-color:#efebeb;
+  padding: 12px;
+}
+.right{
+  width: 75%;
+  height: 100%;
+}
+
+.sasta{
+  color: blue;
+}
+#header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.files{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+.folders{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+.pencilcon{
+  display: none;
+}
+
+.files:hover{
+  background-color:#dadada;
+  cursor: pointer;
+}
+
+.files:hover .pencilcon{
+  display: initial;
+}
+.folders:hover .pencilcon{
+display: initial;
+}
+input{
+  border: 1px solid rgb(0, 136, 255);
+}
+.popup{
+  display: none;
+}
+.files>h4{
+  font-weight: 400;
+}
+#nav{
+  padding: 4px;
+  width: fit-content;
+  height: 40px;
+  background-color: rgb(223, 208, 208);
+}
+textarea{
+  width: 100%;
+  height: 100%;
+}
+#leftside{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid black;
+  text-align: center;
+  background-color: #dadada;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
